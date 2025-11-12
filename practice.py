@@ -35,5 +35,5 @@ elif operation == "/":
 else:
     result = "invalid operation"
 
-print(f"result: {result}")
+print(f"result: {result:.3f}")
 

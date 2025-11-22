@@ -20,20 +20,24 @@ def divide(x, y):
         return "error: cannot divide by zero"
     return x / y
 
-operation = input("enter operation: ")
-num1 = float(input("enter first number: "))
-num2 = float(input("enter second number: "))
+operation = input("Enter operation (+, -, *, /): ")
+num1 = float(input("Enter number 1: "))
+num2 = float(input("Enter number 2: "))
 
 if operation == "+":
-    result = add(num1, num2)
+    print(num1 + num2)
 elif operation == "-":
-    result = subtract(num1, num2)
+    print(num1 - num2)
 elif operation == "*":
-    result = multiply(num1, num2)
+    print(num1 * num2)
 elif operation == "/":
-    result = divide(num1, num2)
+    if num2 != 0:
+        print(num1 / num2)
+    else:
+        print("Error: cannot divide by zero")
 else:
-   result = "invalid operation"
+    print("Invalid operation")
+
 
 print(f"result: {result:.3f} hours to study python!")
 

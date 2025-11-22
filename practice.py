@@ -33,7 +33,7 @@ elif operation == "*":
 elif operation == "/":
     result = divide(num1, num2)
 else:
-    result = "invalid operation"
+   result = "invalid operation"
 
-print(f"result: {result:.3f} cc of saline")
+print(f"result: {result:.3f} hours to study python!")
 
